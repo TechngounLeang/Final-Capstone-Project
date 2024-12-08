@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cresences Bakery - Home</title>
+    <link rel="icon" href="final/cresences-logo.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="final.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="head-contents">
+    <div class="container-fluid p-0">
+         <!-- Header and Navigation -->
+        <header class="py-3" role="banner">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
+                <div class="container-fluid">
+                    <!-- Logo aligned to the left -->
+                    <a class="navbar-brand" href="final.html">
+                        <img src="final/cresences-logo.webp" alt="cresences" aria-label="Cresences Home" width="120">
+                    </a>
+        
+                    <!-- Toggle button for mobile view -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- Navigation links aligned to the right -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="final.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="#OurLocation" class="nav-link">Hours & Locations</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                                <ul class="dropdown-menu" aria-labelledby="menu">
+                                    <li><a href="final.html#menupages" class="dropdown-item">Pastries</a></li>
+                                    <li><a href="final.html#menupages" class="dropdown-item">Signatures</a></li>
+                                    <li><a href="final.html#menupages" class="dropdown-item">Drinks</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#contacts" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="order.html" class="btn btn-primary" id="order">Order</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        
+        
+        <!-- Main Content -->
+        <main id="main-contents" role="main">
+            <section class="video-content position-relative">
+                <!-- Video background section using Bootstrap's responsive aspect ratio utility -->
+                <div class="video-background ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/7nEinTO_MoI?autoplay=1&mute=1&playsinline=1&loop=1&playlist=7nEinTO_MoI&controls=0&disablekb=1" allowfullscreen frameborder="0"></iframe>
+                </div>
+                <!-- Content overlay section -->
+                <div class="content position-absolute top-50 start-50 translate-middle text-center text-white">
+                    <div class="intro">
+                        <h1 class="intro-text display-4 fw-bold">"Where Every Crumb Tells a Story"</h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+            <!-- Special Menu Section -->
+            <section class="specialmenu-contents py-5">
+                <div class="container">
+                    <div class="menu-title text-center mb-4">
+                        <h2>Our Essential Today</h2>
+                    </div>
+                    <div id="five-select" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="selection text-center">
+                                <img src="final/cheerycheescake.png" alt="cheesecake" class="img-fluid" loading="lazy">
+                                <p>Cheery Cheesecake</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="selection text-center">
+                                <img src="final/baguettesw.png" alt="baguette" class="img-fluid" loading="lazy">
+                                <p>Baguette Sandwich</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="selection text-center">
+                                <img src="final/pancake.png" alt="pancake" class="img-fluid" loading="lazy">
+                                <p>Berry Pancake</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="selection text-center">
+                                <img src="final/tart.png" alt="tart" class="img-fluid" loading="lazy">
+                                <p>Nobu's Miso Vanilla Tart</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="selection text-center">
+                                <img src="final/croissant.png" alt="croissant" class="img-fluid" loading="lazy">
+                                <p>Croissant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="menupages" class="menu-section">
+                <!-- Pastry Menu Section -->
+                <div class="left-container">
+                    <div class="menu-container">
+                        <h2>Pastry Menu</h2>
+                        <button id="prev-left" class="nav-button">←</button>
+                        <div class="menu-slider">
+                            <div class="menu-slide">
+                                <img src="final/menu1.jpg" alt="Menu Item 1">
+                            </div>
+                            <div class="menu-slide">
+                                <img src="final/menu2.jpg" alt="Menu Item 2">
+                            </div>
+                            <div class="menu-slide">
+                                <img src="final/menu3.jpg" alt="Menu Item 3">
+                            </div>
+                        </div>
+                        <button id="next-left" class="nav-button">→</button>
+                    </div>
+                </div>
+            
+                <!-- Signature Menu Section -->
+                <div class="middle-container">
+                    <div class="menu-container">
+                        <h2>Signature Menu</h2>
+                        <button id="prev-middle" class="nav-button">←</button>
+                        <div class="menu-slider">
+                            <div class="menu-slide">
+                                <img src="final/smenu1.jpg" alt="Signature Item 1">
+                            </div>
+                            <div class="menu-slide">
+                                <img src="final/smenu2.jpg" alt="Signature Item 2">
+                            </div>
+                            <div class="menu-slide">
+                                <img src="final/smenu3.jpg" alt="Signature Item 3">
+                            </div>
+                            <div class="menu-slide">
+                                <img src="final/smenu4.jpg" alt="Signature Item 4">
+                            </div>
+                            <div class="menu-slide">
+                                <img src="final/smenu5.jpg" alt="Signature Item 5">
+                            </div>
+                            <div class="menu-slide">
+                                <img src="final/smenu6.jpg" alt="Signature Item 6">
+                            </div>
+                            <div class="menu-slide">
+                                <img src="final/smenu7.jpg" alt="Signature Item 7">
+                            </div>
+                            <div class="menu-slide">
+                                <img src="final/smenu8.jpg" alt="Signature Item 8">
+                            </div>
+                        </div>
+                        <button id="next-middle" class="nav-button">→</button>
+                    </div>
+                </div>
+            
+                <!-- Drink Menu Section -->
+                <div class="right-container">
+                    <div class="menu-container">
+                        <h2>Drink Menu</h2>
+                        <img src="final/dmenu.jpg" alt="Drink Menu">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Award and Testimonails Section -->
+            <section id="testimonials" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Testimonials</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="testimonial bg-light p-4 rounded shadow-sm mb-4">
+                                <p class="lead">"The best bakery in town! The croissants are divine, and the staff is incredibly friendly."</p>
+                                <h4 class="text-right">- Sarah M.</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8">
+                            <div class="testimonial bg-light p-4 rounded shadow-sm mb-4">
+                                <p class="lead">"Every dessert I've tried is a masterpiece. Highly recommend their Cherry Cheesecake!"</p>
+                                <h4 class="text-right">- John D.</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="award text-center">
+                                <img src="final/E-label-round-2-1.png" alt="Best Bakery Award" class="img-fluid mb-3" loading="lazy" />
+                                <p class="h5 font-weight-bold">Best Bakery 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                       
+            <!-- Context with text Section -->
+            <section id="text-contents">
+                <div class="info">
+                    <img src="final/macarons.png" alt="Image Hover Overlay Slide From The Bottom" class="image" loading="lazy">
+                    <div class="bottom-slide">
+                        <h1 class="text">"We take pride in using only the freshest ingredients to craft our delicious desserts"</h1>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="final/bread.png" alt="Image Hover Overlay Slide From The Bottom" class="image" loading="lazy">
+                    <div class="bottom-slide">
+                        <h1 class="text">"Explore a world of flavors with our artisanal bread selection, made with the finest ingredients."</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workshops Section -->
+            <section id="workshops">
+                <h2>Join Our Baking Workshops</h2>
+                <p>We open every weekend. Come and Learn the art of baking with our expert team in a fun and friendly environment.</p>
+                <a href="#" class="join-button">View Schedule & Sign Up</a>
+            </section>
+    
+            <section id="OurLocation">
+                <div id="map"></div>
+            </section>            
+        </main>
+
+        <!-- Footer -->
+        <footer id="contacts" role="contentinfo">
+            <div>
+                <address>
+                    <br>5955 MELROSE AVENUE
+                    <br>LOS ANGELES, CALIFORNIA 90038
+                    <br><a id="tel" href="tel:+1234567890">(123) 456-7890</a><br>
+                    <a id="mail" href="mailto:s_sok@mail.fhsu.edu">contact@cresencesbakery.com</a>
+                    <br>
+                    <br>
+                </address>
+            </div>
+            <div>
+                <p id="open-hour">Open Hours:<br> Monday-Friday:<b> 8:00 AM - 5:00 PM
+                <br></b>Weekend: <b> 8:00 AM - 4:00 PM</b>
+                </p>
+            </div>
+            <div id="connect-us">
+                <a class="logo" href="https://facebook.com/" target="_blank"><img src="final/instagram.svg" alt="instagram"></a>
+                <a class="logo" href="https://instagram.com/" target="_blank"><img src="final/facebook.svg" alt="Facebook"></a>
+                <a class="logo" href="https://twitter.com/" target="_blank"><img src="final/twitter.svg" alt="Twitter"></a>
+            </div>
+            <p id="sml-copyright">Copyright 2023 by Cresences Bakery. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQNDttYP4VgtqJy6Vh0neApggH5jw54lA&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
